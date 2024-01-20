@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Staatliches&display=swap" rel="stylesheet">
-
+    
 </head>
 <body>
     
@@ -86,6 +86,16 @@
 
     <main class="contenedor border-rounded">
 
+        <section class="configuracion">
+
+            <h5>Tamaño del Texto:</h5>
+            <select class="configuracion__select" id="fontSizeSelect" onchange="cambiarTamanioTexto(this.value)">
+                <option value="1">Pequeño</option>
+                <option value="1.5" selected>Normal</option>
+                <option value="2.5">Grande</option>
+            </select>
+
+        </section>
         <h2> Top pizzales de la semana</h2>
 
         <section class="contenedor__seccionPizzas boder-secciones">
@@ -213,6 +223,7 @@
 
     </footer>
 
+    <script src="javascript/app.js"></script>
 
 </body>
 </html>
