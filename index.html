@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preload" href="css/normalize.css" as="style"/>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preload" href="css/estilo.css" as="style"/> <!-- Esto hace que sea mas rapido-->
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Staatliches&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header class="header">
+
+        <a href="index.html"> <img src="../Iconos/Imagen Logo 2-modified.png"/> </a>
+
+        <div class="header__barra border-rounded">
+
+            <div class="header__barra--categoria">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f4ce00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="8.5" cy="8.5" r="1" fill="currentColor" />
+                        <path d="M4 7v3.859c0 .537 .213 1.052 .593 1.432l8.116 8.116a2.025 2.025 0 0 0 2.864 0l4.834 -4.834a2.025 2.025 0 0 0 0 -2.864l-8.117 -8.116a2.025 2.025 0 0 0 -1.431 -.593h-3.859a3 3 0 0 0 -3 3z" />
+                    </svg>
+
+                <a href="promociones.html">
+                    <h2>Promociones</h2>
+                </a>
+
+            </div>            
+                
+            <div class="header__barra--categoria">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tools-kitchen" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f4ce00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 3h8l-1 9h-6z" />
+                    <path d="M7 18h2v3h-2z" />
+                    <path d="M20 3v12h-5c-.023 -3.681 .184 -7.406 5 -12z" />
+                    <path d="M20 15v6h-1v-3" />
+                    <path d="M8 12l0 6" />
+                  </svg>
+
+                <h2>Carta</h2>
+
+            </div>
+                  
+            <div class="header__barra--categoria">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-store" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f4ce00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 21l18 0" />
+                    <path d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4" />
+                    <path d="M5 21l0 -10.15" />
+                    <path d="M19 21l0 -10.15" />
+                    <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
+                  </svg>
+             
+
+                <h2>Locales</h2>
+                
+            </div>         
+            
+        </div>
+
+        <div class="header__carrito border-rounded">
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart-minus" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FF4C41" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                <path d="M12.5 17h-6.5v-14h-2" />
+                <path d="M6 5l14 1l-1 7h-13" />
+                <path d="M16 19h6" />
+              </svg>
+            <h2> Carrito </h2>
+        </div>
+
+    </header>
+
+
+    <main class="contenedor border-rounded">
+
+        <h2> Top pizzales de la semana</h2>
+
+        <section class="contenedor__seccionPizzas boder-secciones">
+
+            <div class="contenedor__seccionPizzas--pizza">
+                <h3>Super peperoni</h3>
+                <img src="../Imagenes/Peperoni.png"/>
+                <button class="boton border-rounded"> Añadir al carrito </button>
+            </div>
+
+            <div class="contenedor__seccionPizzas--pizza">
+                <h3>Hawaiana</h3>
+                <img src="../Imagenes/Hawaiana.png"/>
+                <button class="boton border-rounded"> Añadir al carrito </button>
+            </div>
+
+            <div class="contenedor__seccionPizzas--pizza">
+                <h3>Champiñones</h3>
+                <img src="../Imagenes/Champiñones.png"/>
+                <button class="boton border-rounded"> Añadir al carrito </button>
+            </div>
+
+            <div class="contenedor__seccionPizzas--pizza">
+                <h3>Cuatro quesos</h3>
+                <img src="../Imagenes/Cuatro quesos.png"/>
+                <button class="boton border-rounded"> Añadir al carrito </button>
+            </div>
+            
+        </section>
+
+        <h2> All time pizzales favoritas</h2>
+        <section class="contenedor__seccionPizzas boder-secciones">
+
+            <div class="contenedor__seccionPizzas--pizza">
+                <h3>Super peperoni</h3>
+                <img src="../Imagenes/Peperoni.png"/>
+                <button class="boton border-rounded"> Añadir al carrito </button>
+            </div>
+
+            <div class="contenedor__seccionPizzas--pizza">
+                <h3>Jamon Curado</h3>
+                <img src="../Imagenes/Jamon curado.png"/>
+                <button class="boton border-rounded"> Añadir al carrito </button>
+            </div>
+
+            <div class="contenedor__seccionPizzas--pizza">
+                <h3>Con anchoas</h3>
+                <img src="../Imagenes/Con anchoas.png"/>
+                <button class="boton border-rounded"> Añadir al carrito </button>
+            </div>
+
+            <div class="contenedor__seccionPizzas--pizza">
+                <h3>Cuatro quesos</h3>
+                <img src="../Imagenes/Cuatro quesos.png"/>
+                <button class="boton border-rounded"> Añadir al carrito </button>
+            </div>
+
+        </section>
+
+        <h2> All time postres favoritos</h2>
+        <section class="contenedor__seccionPostres boder-secciones">
+
+            <div class="contenedor__seccionPostres--postre">
+                <h3>Banana Split</h3>
+                <img src="../Imagenes/BananaSplit.png"/>
+                <button class="boton border-rounded"> Añadir al carrito </button>
+            </div>
+
+            <div class="contenedor__seccionPostres--postre">
+                <h3>Helado Mixt</h3>
+                <img src="../Imagenes/HeladoMixto.png"/>
+                <button class="boton border-rounded"> Añadir al carrito </button>
+            </div>
+
+
+        </section>
+
+        
+        <h2> All time bebidas favoritas</h2>
+
+        <section class="contenedor__seccionBebidas boder-secciones">
+
+            <div class="contenedor__seccionBebidas--bebida">
+                <h3>Coca Cola</h3>
+                <img src="../Imagenes/CocaCola.png"/>
+                <button class="boton border-rounded"> Añadir al carrito </button>
+            </div>
+
+            <div class="contenedor__seccionBebidas--bebida">
+                <h3>Helado Mixt</h3>
+                <img src="../Imagenes/7 up.png"/>
+                <button class="boton border-rounded"> Añadir al carrito </button>
+            </div>
+
+            
+        </section>
+
+
+    </main>
+
+    <footer class="pie">
+
+        <div class="pie__icono">
+            
+         <img  src="../Iconos/Imagen Logo 2-modified.png"/>
+        </div>
+
+        <div class="pie__columna" >
+
+            <ul>Acerca de nosotros
+                <h4><li>Quienes Somos</li></h4>
+                <h4><li>Nuestro Objetivo </li></h4>
+                <h4><li>Trabaja con nosotros</li></h4>
+                <h4><li>Visita nuestras instalaciones</li></h4>
+             </ul>
+        </div>
+
+        <div class="pie__columna" >
+
+            <ul> Informacion 
+                <h4><li>Politica de privacidad</li></h4>
+                <h4><li>Contactanos</li></h4>
+            </ul>
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
