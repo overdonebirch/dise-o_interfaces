@@ -1,0 +1,343 @@
+:root{
+
+    --primario: #f4ce00;
+    --primarioHover: #f5ecbc;
+    --fondo: #FAEEB2;
+    --categorias: #FF4C41;
+    --categoriasHover: #f5473e;
+    --cabeceras: #951D3A;
+    --textosDescriptivos : #f4ce00;
+    --pieDePagina: #8A8A8A;
+    --boton: #04A504;
+    --botonHover: #03b82a;
+    --botonPresionado: #135706;
+    --textoBoton:#ff9100;
+
+
+    --carritoPresionado:#968006;
+    --categoriaPresionada:#ff0b0b;
+}
+
+/*Globables */
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; /*Esto se usa junto con el box-sizing inherit (ver mas abajo )*/
+    scroll-snap-type: y mandatory;
+}
+
+
+*, *:before, *:after{
+    box-sizing: inherit;  /*esto es para que al poner padding o un border, no aumente el tamaño de las cajas*/
+}
+
+
+body{
+
+    background-color: var(--fondo);
+}
+
+
+img {
+    /* width: 10%;
+    height: 90%; */
+    max-width: 12rem;
+    min-width: 5rem;
+
+}
+
+h2{
+    text-align: center;
+    color: var(--cabeceras);
+    font-size: 3.2rem ;
+}
+
+
+h3{
+    text-align: center;
+    color: var(--cabeceras);
+    font-size: 1.8rem ;
+}
+h5 {
+    text-align: center;
+    color: var(--cabeceras);
+    font-size: 1rem ;
+}
+
+
+.border-rounded{
+    border: 1px ; 
+    border-radius: 20px;
+}
+/** Header **/
+
+
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+
+    position: relative;
+}
+
+.header__barra{
+
+    background-color: var(--categorias);
+    width: 100rem;
+    height: 50%;
+    min-width: 50rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+ 
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.header__barra--categoria{
+
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+}
+
+
+.header__barra--categoria:hover{
+
+    background-color: var(--categoriasHover);
+    border: 0.3rem var(--primario) solid;
+    border-radius: 1rem;
+    cursor: pointer;
+
+}
+
+.header__barra--categoria:active{
+
+    background-color: var(--categoriaPresionada);
+
+}
+
+
+.header__carrito{
+
+
+  background-color: var(--primario);
+  width: 50rem;
+  height: 50%;
+  min-width: rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+   
+}
+
+.header__carrito:hover{
+
+    border: 0.3rem var(--categorias) solid;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.header__carrito:active{
+
+   background-color: var(--carritoPresionado);
+
+}
+
+
+/** Contenedor **/ 
+
+.configuracion{
+    display: flex;
+    justify-content: end;
+}
+
+.configuracion__select{
+
+    max-height: 5rem;
+    align-items: baseline;
+    background-color: var(--boton);
+    border-radius: 80px;
+
+}
+
+
+.contenedor{
+
+    max-width: 150rem; 
+    margin: 0 auto 0 auto;
+    background-color: var(--primario);
+    display: grid;
+    grid-template-rows: repeat(5,fr);
+    row-gap: 1rem;
+    margin-bottom: 5rem;
+
+}
+
+.boder-secciones{
+
+    border: 0.3rem var(--categorias) solid;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+/**Seccion de Pizzas **/
+
+.contenedor__seccionPizzas{
+ 
+    height: 100%;
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.contenedor__seccionPizzas--pizza{
+
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 1rem;
+    
+}
+
+
+.boton{
+    border: 1rem var(--boton) ;
+    background-color: var(--boton);
+    color: var(--textoBoton);
+    font-size: 1.3rem;
+}
+
+.boton:hover{
+    background-color: var(--botonHover);
+    cursor: pointer;
+}
+
+.boton:active{
+    background-color: var(--botonPresionado);
+}
+
+
+/**Seccion de postres : **/
+
+
+.contenedor__seccionPostres{
+ 
+    height: 100%;
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.contenedor__seccionPostres--postre{
+
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 1rem;
+    
+}
+
+
+/**Seccion de bebidas : **/
+
+
+.contenedor__seccionBebidas{
+ 
+    height: 100%;
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.contenedor__seccionBebidas--bebida{
+
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 1rem;
+    
+}
+
+/** Pie de pagina **/
+
+
+.pie{
+    background-color: var(--pieDePagina);
+    height: 25rem; 
+
+    /* display: flex;
+    flex-direction: row; */
+
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    justify-content: space-evenly;
+
+}
+
+.pie__icono{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.pie__columna{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color:var(--textosDescriptivos);
+}
+
+
+
+/*** Promociones ***/
+
+
+.contenedor__promocion30{
+ 
+    height: 100%;
+    width: 97%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+
+}
+
+
+.contenedor__promocion30--fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.contenedor--promociones{
+
+    max-width: 90rem; 
+    margin: 0 auto 0 auto;
+    background-color: var(--primario);
+    display: grid;
+    grid-template-rows: repeat(4,fr);
+    row-gap: 1rem;
+    margin-bottom: 5rem;
+
+}
