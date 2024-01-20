@@ -11,7 +11,8 @@
     --boton: #04A504;
     --botonHover: #03b82a;
     --botonPresionado: #135706;
-    --textoBoton:#f4ce00;
+    --textoBoton:#ff9100;
+
 
     --carritoPresionado:#968006;
     --categoriaPresionada:#ff0b0b;
@@ -32,6 +33,7 @@ html{
 
 
 body{
+
     background-color: var(--fondo);
 }
 
@@ -56,6 +58,12 @@ h3{
     color: var(--cabeceras);
     font-size: 1.8rem ;
 }
+h5 {
+    text-align: center;
+    color: var(--cabeceras);
+    font-size: 1rem ;
+}
+
 
 .border-rounded{
     border: 1px ; 
@@ -155,6 +163,20 @@ a{
 
 /** Contenedor **/ 
 
+.configuracion{
+    display: flex;
+    justify-content: end;
+}
+
+.configuracion__select{
+
+    max-height: 5rem;
+    align-items: baseline;
+    background-color: var(--boton);
+    border-radius: 80px;
+
+}
+
 
 .contenedor{
 
@@ -162,7 +184,7 @@ a{
     margin: 0 auto 0 auto;
     background-color: var(--primario);
     display: grid;
-    grid-template-rows: repeat(4,fr);
+    grid-template-rows: repeat(5,fr);
     row-gap: 1rem;
     margin-bottom: 5rem;
 
