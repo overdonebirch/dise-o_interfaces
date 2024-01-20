@@ -87,6 +87,17 @@
 
     <main class="contenedor--promociones border-rounded">
 
+        <section class="configuracion">
+
+            <h5>Tamaño del Texto:</h5>
+            <select class="configuracion__select" id="fontSizeSelect" onchange="cambiarTamanioTexto(this.value)">
+                <option value="1">Pequeño</option>
+                <option value="1.5" selected>Normal</option>
+                <option value="2.5">Grande</option>
+            </select>
+
+        </section>
+
         <h2> Promociones por menos de 30 euros</h2>
 
         <section class="contenedor__promocion30 boder-secciones">
@@ -198,6 +209,8 @@
         </div>
 
     </footer>
+
+    <script src="javascript/app.js"></script>
 
 
 </body>
