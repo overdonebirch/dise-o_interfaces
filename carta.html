@@ -12,10 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Staatliches&display=swap" rel="stylesheet">
-    
+
 </head>
 <body>
-    
     <header class="header">
 
         <a href="index.html"> <img src="Iconos/Imagen Logo 2-modified.png" alt="Logotipo del comercio y redirige a la pagina de inicio"/> </a>
@@ -87,11 +86,12 @@
     </header>
 
 
-    <main class="contenedor border-rounded">
+
+    <main class="contenedor--promociones border-rounded">
 
         <section class="configuracion">
 
-            <h2>Tamaño del Texto:</h2>
+            <h5>Tamaño del Texto:</h5>
             <select class="configuracion__select" id="fontSizeSelect" onchange="cambiarTamanioTexto(this.value)">
                 <option value="1">Pequeño</option>
                 <option value="1.5" selected>Normal</option>
@@ -99,106 +99,135 @@
             </select>
 
         </section>
-        <h2> Top pizzales de la semana</h2>
+
+        <h2>Pizzales Premium</h2>
+
 
         <section class="contenedor__seccionPizzas boder-secciones">
 
-            <article class="contenedor__seccionPizzas--pizza">
-                <h3>Super peperoni</h3>
-                <img src="Imagenes/Peperoni.png" alt="Pizza peperoni"/>
-                <button class="boton border-rounded"> Añadir al carrito </button>
-            </article>
-
-            <article class="contenedor__seccionPizzas--pizza">
-                <h3>Hawaiana</h3>
-                <img src="Imagenes/Hawaiana.png" alt="Pizza Hawaiana"/>
-                <button class="boton border-rounded"> Añadir al carrito </button>
-            </article>
-
-            <article class="contenedor__seccionPizzas--pizza">
-                <h3>Champiñones</h3>
-                <img src="Imagenes/Champiñones.png" alt="Pizza champiñones"/>
-                <button class="boton border-rounded"> Añadir al carrito </button>
-            </article>
-
-            <article class="contenedor__seccionPizzas--pizza">
-                <h3>Cuatro quesos</h3>
-                <img src="Imagenes/Cuatro quesos.png" alt="Pizza cuatro quesos"/>
-                <button class="boton border-rounded"> Añadir al carrito </button>
-            </article>
-            
-        </section>
-
-        <h2> All time pizzales favoritas</h2>
-        <section class="contenedor__seccionPizzas boder-secciones">
-
-            <article class="contenedor__seccionPizzas--pizza">
+            <div class="contenedor__seccionPizzas--pizza">
                 <h3>Super peperoni</h3>
                 <img src="Imagenes/Peperoni.png" alt="Piza peperoni"/>
                 <button class="boton border-rounded"> Añadir al carrito </button>
-            </article>
+            </div>
 
-            <article class="contenedor__seccionPizzas--pizza">
+            <div class="contenedor__seccionPizzas--pizza">
                 <h3>Jamon Curado</h3>
                 <img src="Imagenes/Jamon curado.png" alt="Pizza Jamon Curado"/>
                 <button class="boton border-rounded"> Añadir al carrito </button>
-            </article>
+            </div>
 
-            <article class="contenedor__seccionPizzas--pizza">
+            <div class="contenedor__seccionPizzas--pizza">
+                <h3>Con tomate Cherry</h3>
+                <img src="Imagenes/Con Tomate Cherry.png" alt="Pizza con tomate cherry"/>
+                <button class="boton border-rounded"> Añadir al carrito </button>
+            </div>
+
+            <div class="contenedor__seccionPizzas--pizza">
+                <h3>Con salsas mixtas </h3>
+                <img src="Imagenes/Salsas Mixtas.PNG" alt="Pizza de salsas mixtas"/>
+                <button class="boton border-rounded"> Añadir al carrito </button>
+            </div>
+            
+        </section>
+        
+
+        <h2>Pizzales Clásicas</h2>
+        
+        <section class="contenedor__seccionPizzas boder-secciones">
+
+            <div class="contenedor__seccionPizzas--pizza">
                 <h3>Con anchoas</h3>
                 <img src="Imagenes/Con anchoas.png" alt="Pizza con anchoas"/>
                 <button class="boton border-rounded"> Añadir al carrito </button>
-            </article>
+            </div>
 
-            <article class="contenedor__seccionPizzas--pizza">
+            <div class="contenedor__seccionPizzas--pizza">
                 <h3>Cuatro quesos</h3>
                 <img src="Imagenes/Cuatro quesos.png" alt="Pizza cuatro quesos"/>
                 <button class="boton border-rounded"> Añadir al carrito </button>
-            </article>
+            </div>
 
+            <div class="contenedor__seccionPizzas--pizza">
+                <h3>Con Champiñones</h3>
+                <img src="Imagenes/Champiñones.png" alt="Pizza champiñones"/>
+                <button class="boton border-rounded"> Añadir al carrito </button>
+            </div>
+
+            <div class="contenedor__seccionPizzas--pizza">
+                <h3>Hawaiana </h3>
+                <img src="Imagenes/Hawaiana.png" alt="Pizza Hawaiana"/>
+                <button class="boton border-rounded"> Añadir al carrito </button>
+            </div>
+            
         </section>
+        
 
-        <h2> All time postres favoritos</h2>
-        <section class="contenedor__seccionPostres boder-secciones">
+        
+        <h2>Bebidas</h2>
+        
+        <section class="contenedor__seccionPizzas boder-secciones">
 
-            <article class="contenedor__seccionPostres--postre">
+            <div class="contenedor__seccionPizzas--pizza">
+                <h3>CocaCola</h3>
+                <img src="Imagenes/CocaCola.png" alt="Bebida CocaCola"/>
+                <button class="boton border-rounded"> Añadir al carrito </button>
+            </div>
+
+            <div class="contenedor__seccionPizzas--pizza">
+                <h3>7 up</h3>
+                <img src="Imagenes/7 up.png" alt="Bebida 7up"/>
+                <button class="boton border-rounded"> Añadir al carrito </button>
+            </div>
+
+            <div class="contenedor__seccionPizzas--pizza">
+                <h3>Fanta</h3>
+                <img src="Imagenes/Fanta.PNG" alt="Bebida Fanta"/>
+                <button class="boton border-rounded"> Añadir al carrito </button>
+            </div>
+
+            <div class="contenedor__seccionPizzas--pizza">
+                <h3>Dr Pepper </h3>
+                <img src="Imagenes/DrPepper.PNG" alt="Bebida DrPepper"/>
+                <button class="boton border-rounded"> Añadir al carrito </button>
+            </div>
+            
+        </section>
+        
+          
+        <h2>Postres</h2>
+        
+        <section class="contenedor__seccionPizzas boder-secciones">
+
+            <div class="contenedor__seccionPizzas--pizza">
                 <h3>Banana Split</h3>
                 <img src="Imagenes/BananaSplit.png" alt="Postre Banana Split"/>
                 <button class="boton border-rounded"> Añadir al carrito </button>
-            </article>
+            </div>
 
-            <article class="contenedor__seccionPostres--postre">
-                <h3>Helado Mixt</h3>
+            <div class="contenedor__seccionPizzas--pizza">
+                <h3>Helado Mixto</h3>
                 <img src="Imagenes/HeladoMixto.png" alt="Postre Helado Mixto"/>
                 <button class="boton border-rounded"> Añadir al carrito </button>
-            </article>
+            </div>
 
-
-        </section>
-
-        
-        <h2> All time bebidas favoritas</h2>
-
-        <section class="contenedor__seccionBebidas boder-secciones">
-
-            <article class="contenedor__seccionBebidas--bebida">
-                <h3>Coca Cola</h3>
-                <img src="Imagenes/CocaCola.png" alt="Bebida CocaCola"/>
+            <div class="contenedor__seccionPizzas--pizza">
+                <h3>Fanta</h3>
+                <img src="Imagenes/Fanta.PNG" alt="Bebida Fanta"/>
                 <button class="boton border-rounded"> Añadir al carrito </button>
-            </article>
+            </div>
 
-            <article class="contenedor__seccionBebidas--bebida">
-                <h3>Helado Mixt</h3>
-                <img src="Imagenes/7 up.png" alt="Bebida 7up"/>
+            <div class="contenedor__seccionPizzas--pizza">
+                <h3>Tarta Chocolate </h3>
+                <img src="Imagenes/Tarta Chocolate.PNG" alt="Tarta Chocolate"/>
                 <button class="boton border-rounded"> Añadir al carrito </button>
-            </article>
-
+            </div>
             
         </section>
-
+        
 
     </main>
-
+    
     <footer class="pie">
 
         <div class="pie__icono">
@@ -226,7 +255,8 @@
 
     </footer>
 
+
     <script src="javascript/app.js"></script>
 
+
 </body>
-</html>

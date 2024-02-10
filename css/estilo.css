@@ -1,19 +1,29 @@
 :root{
 
+
     --primario: #f4ce00;
-    --primarioHover: #f5ecbc;
-    --fondo: #FAEEB2;
+    
     --categorias: #FF4C41;
     --categoriasHover: #f5473e;
     --cabeceras: #951D3A;
+    --boton: #04A504;
+      --fondo: #FAEEB2;
+
+   
+
+    
+    --primarioHover: #f5ecbc;
+
+
+    --fondo: #FEFAE1;
+
     --textosDescriptivos : #f4ce00;
     --pieDePagina: #8A8A8A;
-    --boton: #04A504;
+  
+    --boton: #0e910e; 
     --botonHover: #03b82a;
     --botonPresionado: #135706;
-    --textoBoton:#ff9100;
-
-
+    --textoBoton:#ffff;
     --carritoPresionado:#968006;
     --categoriaPresionada:#ff0b0b;
 }
@@ -39,8 +49,7 @@ body{
 
 
 img {
-    /* width: 10%;
-    height: 90%; */
+
     max-width: 12rem;
     min-width: 5rem;
 
