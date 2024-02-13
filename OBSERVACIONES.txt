@@ -1,0 +1,4 @@
+He subido la pagina web a un servidor para validar la accesibilidad de las 3 paginas con la herramienta Silktide toolbar y muestra que cumplo con el Nivel AA , adjunto captura de las 3 validaciones.
+
+También he validado Todo el codigo en la web 
+https://validator.w3.org/nu/#textarea  y, aparte de que figuran algunos warnings, no me da ningún error
